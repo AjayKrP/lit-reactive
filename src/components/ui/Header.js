@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import {Link} from "react-router-dom";
 
 export default class Home extends React.Component{
     render() {
@@ -12,10 +13,7 @@ export default class Home extends React.Component{
                     </div>
                     <div className="site-mobile-menu-body"></div>
                 </div>
-
-
-                <div className="site-navbar-wrap js-site-navbar bg-white">
-
+                <div className="site-navbar-wrap sticky-top js-site-navbar bg-white">
                     <div className="container">
                         <div className="site-navbar bg-light">
                             <div className="row align-items-center">
@@ -34,27 +32,27 @@ export default class Home extends React.Component{
                                             <ul className="site-menu js-clone-nav d-none d-lg-block">
                                                 <li className="active"><a href="/">Home</a></li>
                                                 <li className="has-children">
-                                                    <a href="/about">About</a>
+                                                    <Link to="/about">About</Link>
                                                     <ul className="dropdown arrow-top">
-                                                        <li><a href="testimonials.html">Testimonials</a></li>
-                                                        <li><a href="gallery.html">Gallery</a></li>
-                                                        <li><a href="faq.html">FAQ</a></li>
-                                                        <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                                                        <li><Link to="/testimonials">Testimonials</Link></li>
+                                                        <li><Link to="/gallery">Gallery</Link></li>
+                                                        <li><Link to="/faq">FAQ</Link></li>
+                                                        <li><Link to="/why-choose-us">Why Choose Us</Link></li>
                                                         <li className="has-children">
                                                             <a href="#">Sub Menus</a>
                                                             <ul className="dropdown">
-                                                                <li><a href="/testimonials">Testimonials</a></li>
-                                                                <li><a href="/gallery">Gallery</a></li>
-                                                                <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                                                                <li><Link to="/testimonials">Testimonials</Link></li>
+                                                                <li><Link to="/gallery">Gallery</Link></li>
+                                                                <li><Link to="/why-choose-us">Why Choose Us</Link></li>
                                                             </ul>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="/services">Services</a></li>
-                                                <li><a href="/blogs">Blog</a></li>
+                                                <li><Link to="/services">Services</Link></li>
+                                                <li><Link to="/blogs">Blog</Link></li>
                                                 <li><a href="/contact">Contact</a></li>
-                                                <li><a href="/contact"><span
-                                                    className="d-inline-block bg-primary text-white btn btn-primary">Get Started</span></a>
+                                                <li><Link to="/contact"><span
+                                                    className="d-inline-block bg-primary text-white btn btn-primary">Get Started</span></Link>
                                                 </li>
                                             </ul>
                                         </div>

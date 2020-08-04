@@ -1623,3 +1623,15 @@ a {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+
+/**
+Style for topics
+ */
+
+.topics {
+  border: black 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
